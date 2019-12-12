@@ -41,8 +41,8 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:mysql://localhost:3306/BugTrackerJHipster?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
-    username: root
-    password:
+    username: jhipster
+    password: Uxe2lu1dOjKC
     hikari:
       poolName: Hikari
       auto-commit: false

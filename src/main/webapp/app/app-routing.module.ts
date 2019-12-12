@@ -5,7 +5,7 @@ import { navbarRoute } from './layouts/navbar/navbar.route';
 import { DEBUG_INFO_ENABLED } from 'app/app.constants';
 
 import { UserRouteAccessService } from 'app/core/auth/user-route-access-service';
-
+import { MyticketsComponent } from 'app/mytickets/mytickets.component.ts';
 const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
 
 @NgModule({
@@ -19,6 +19,10 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
           },
           canActivate: [UserRouteAccessService],
           loadChildren: () => import('./admin/admin-routing.module').then(m => m.AdminRoutingModule)
+        },
+        {
+          path: 'jhi-mytickets',
+          component: MyticketsComponent
         },
         {
           path: 'account',
